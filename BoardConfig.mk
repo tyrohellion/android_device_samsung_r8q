@@ -1,17 +1,17 @@
 # Inherit common board flags
 include device/samsung/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/y2q
+DEVICE_PATH := device/samsung/r8q
 
 # Platform
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := y2q
+TARGET_OTA_ASSERT_DEVICE := r8q
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/x1q_chn_openx_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := vendor/variant_y2q_chn_openx_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := vendor/variant_r8q_chn_openx_defconfig
 KERNEL_LD := DEBUG_DEFCONFIG=vendor/aosp_defconfig
 
 # Bluetooth
